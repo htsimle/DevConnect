@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <title>
+    DEV CONNECT
+  </title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+       <!-- header section strats -->
+       <header class="header_section">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              DEV Connects
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">POST Feeds <span class="sr-only">(current)</span></a>
+              </li>
+              <!-- <li class="nav-item"> -->
+                <!-- <a class="nav-link" href="shop.html"> -->
+                  <!-- Shop -->
+                <!-- </a> -->
+              <!-- </li> -->
+        <li class="nav-item">
+                <a class="nav-link" href="addBlog.html">Add Post</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="updateblog.html">
+                  update Exprience
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="testimonial.html">
+                  Testimonial
+                </a>
+              </li>
+              
+            </ul>
+            <div class="user_option">
+              <a href="loginpage.html">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>
+                  Login
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+              </a>
+              <form class="form-inline ">
+                <button class="btn nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- end header section -->
+  </div>
+  <!-- end hero area -->
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding">
+    <div class="container px-0">
+      <div class="heading_container ">
+        <h2 class="" style="text-align: center;">
+          Add Experience
+        </h2>
+      </div>
+    </div>
+    <div class="container container-bg">
+      <div class="row">
+        <div class="col-lg-7 col-md-6 px-0">
+          <div class="map_container">
+            <img src="images/logodev.png" alt="DEV LOGO" width="500" height="600">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-5 px-0">
+          <form action="#">
+            <div>
+              
+                                            <label for="email" class="form-label">Experience Title</label>
+                                            <input type="text" id="btitle" name="email" placeholder="Title of your Experience" class="form-control" required>
+                                        
+            </div>
+            <div>
+              
+                                            <label for="password" class="form-label">Company Name</label>
+                                            <input type="text" id="bpic" name="password" placeholder="at Company.." class="form-control" required>
+                                       
+            </div>
+            <div>
+              
+                                            <label for="email" class="form-label">Job Discription</label>
+                                            <input type="email" id="bdisc" name="email" placeholder="Discription of your previous Job" class="form-control" required>
+                                        
+            </div>
+            <div>
+             
+                                            <label for="password" class="form-label">Time</label><br>
+                                            <input type="datetime-local" id="btime" name="password"  required>
+                                        
+            </div>
+            <div class="d-flex ">
+             
+<button  type="button" onclick="addblog();" class="btn-btn-primary" >ADD</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <!-- info section -->
+
+  <section class="info_section  layout_padding2-top">
+    <div class="social_container">
+      <div class="social_box">
+        <a href="">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="info_container ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <h6>
+              ABOUT US
+            </h6>
+            <p>
+              Dev Connects has been a game-changer for me as a developer. The platform provided a seamless and interactive environment where I could easily connect with like-minded developers from around the world. Through this incredible network, I've not only expanded my knowledge and skills but also formed valuable professional relationships. It's a fantastic place to share ideas, seek advice, and collaborate on projects. Thank you, Dev Connects, for empowering developers and fostering a thriving community!</p>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_form ">
+              <h5>
+                Newsletter
+              </h5>
+              <form action="#">
+                <input type="email" placeholder="Enter your email">
+                <button>
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h6>
+              NEED HELP
+            </h6>
+           
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h6>
+              CONTACT US
+            </h6>
+            <div class="info_link-box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span> Gb road 123 london Uk </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+01 12345678901</span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span> demo@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section -->
+    <footer class=" footer_section">
+      <div class="container">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://html.design/">Free Html Templates</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer section -->
+
+  </section>
+
+  <!-- end info section -->
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <script src="js/custom.js"></script>
+      <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/form-validator.js"></script>
+    <script src="assets/js/script.js"></script>
+	
+	
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script>
+
+function addblog()
+{
+
+var title = document.getElementById("btitle").value;
+var pic = document.getElementById("bpic").value;
+var disc = document.getElementById("bdisc").value;
+var time = document.getElementById("btime").value;
+
+/*
+alert("data added");
+alert("Title: " + title);
+alert("picture: " + pic);
+alert("Description: " + disc);
+alert("Time: " + time);
+*/
+
+
+$.post("controller.php", {
+			
+			
+			title : title,
+			pic : pic,
+			disc : disc,
+			dtime : time,
+		
+		
+			action : 'addblogdata'
+			
+		}, function(result) {
+		
+			
+			alert("Data Added");
+			
+		});		
+	
+
+
+}
+
+
+
+</script>
+
+</body>
+
+</html>

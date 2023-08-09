@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <style>
+    .center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Basic reset for the table and container */
+    .table-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    #userprofile {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    #userprofile th,
+    #userprofile td {
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Styling for each table row (entry) */
+    #userprofile tbody tr {
+      background-color: pink;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+
+    /* Add some margin between rows */
+    #userprofile tbody tr+tr {
+      margin-top: 10px;
+    }
+
+    /* Remove border for the last row to avoid extra space */
+    #userprofile tbody tr:last-child {
+      border: none;
+    }
+  </style>
+
+  <title>
+    Dev Connect
+  </title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="index.html">
+          <span>
+            DEV Connects
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  ">
+            <li class="nav-item active">
+              <a class="nav-link" href="allblogs.html">POST Feeds <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- <li class="nav-item"> -->
+            <!-- <a class="nav-link" href="shop.html"> -->
+            <!-- Shop -->
+            <!-- </a> -->
+            <!-- </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="addBlog.html">Add Post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="updateblog.html">
+                update Exprience
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonial.html">
+                Testimonial
+              </a>
+            </li>
+
+          </ul>
+          <div class="user_option">
+            <a onclick="">
+              <i aria-hidden="true"></i>
+              <button id="logoutbutton" onclick="Logout()">
+                Logout
+              </button>
+            </a>
+            <a href="updateblog.html">
+
+              <div class="fa fa-user" id="profile">Admin</div>
+            </a>
+            <!-- <form class="form-inline ">
+              <button class="btn nav_search-btn" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form> -->
+
+
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+
+    <section class="slider_section">
+      <div class="slider_container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="detail-box">
+                      <h1>
+                        Welcome To Dev Connects<br>
+                        Connects with others
+                      </h1>
+                      <p>
+                        Dev Connects: Where Developers Unite and Collaborate!"</p>
+                      <a href="">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+    </section>
+
+    <!-- end slider section -->
+  </div>
+  <!-- end hero area -->
+
+  <!-- shop section -->
+
+  <section class="shop_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          All POSTS
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+
+
+
+
+        </div>
+
+      </div>
+    </div>
+    <!-- Your HTML content goes here -->
+    <div class="table-container">
+      <table id="userprofile">
+        <thead>
+          <tr>
+            <th>User ID</th>
+            <th>Title</th>
+            <th>Time of Upload</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- The fetched data will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- <div class="btn-box">
+      <button type="button" onclick="viewallblogs();">View All Post</button>
+    </div> -->
+    </div>
+  </section>
+
+  <!-- end shop section -->
+
+
+  <!-- gift section -->
+
+  <section class="gift_section layout_padding-bottom">
+    <div class="box ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="img_container">
+              <div class="img-box">
+                <img src="images/gifts.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>
+                  Connects with <br>
+                  like mindeds
+                </h2>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- end gift section -->
+
+
+
+
+  <!-- client section -->
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Testimonial
+        </h2>
+      </div>
+    </div>
+    <div class="container px-0">
+      <div id="customCarousel2" class="carousel  carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="box">
+              <div class="client_info">
+                <div class="client_name">
+                  <h5>
+                    Dev Connects
+                  </h5>
+                  <h6>
+                    objectives
+                  </h6>
+                </div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </div>
+              <p>
+                Dev Connects has been a game-changer for me as a developer. The platform provided a seamless and
+                interactive environment where I could easily connect with like-minded developers from around the world.
+                Through this incredible network, I've not only expanded my knowledge and skills but also formed valuable
+                professional relationships. It's a fantastic place to share ideas, seek advice, and collaborate on
+                projects. Thank you, Dev Connects, for empowering developers and fostering a thriving community!</p>
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="client_info">
+                <div class="client_name">
+                  <h5>
+                    Rochak
+                  </h5>
+                  <h6>
+                    Default model text
+                  </h6>
+                </div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="client_info">
+                <div class="client_name">
+                  <h5>
+                    Brad Johns
+                  </h5>
+                  <h6>
+                    Default model text
+                  </h6>
+                </div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </div>
+              <p>
+                Dev Connects has been a game-changer for me as a developer. The platform provided a seamless and
+                interactive environment where I could easily connect with like-minded developers from around the world.
+                Through this incredible network, I've not only expanded my knowledge and skills but also formed valuable
+                professional relationships. It's a fantastic place to share ideas, seek advice, and collaborate on
+                projects. Thank you, Dev Connects, for empowering developers and fostering a thriving community!</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end client section -->
+
+  <!-- info section -->
+
+  <!-- footer section -->
+  <footer class=" footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">DEV</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+
+  <!-- end info section -->
+
+  <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+  <script>
+
+    viewallblogs();
+    // sessionID();
+    function viewallblogs() {
+      $.post("controller.php", { action: 'getblogdata' }, function (result) {
+        var users = jQuery.parseJSON(result);
+        var table = document.getElementById("userprofile");
+
+        for (var i = 0; i < users['title'].length; i++) {
+          var row = table.insertRow(-1);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          var cell3 = row.insertCell(2);
+
+          cell1.innerHTML = users['id'][i];
+          cell2.innerHTML = users['title'][i];
+          cell3.innerHTML = users['dtime'][i];
+        }
+      });
+    }
+
+
+
+      // Check if the userID and name are set in session storage
+      if (sessionStorage.getItem('userID') && sessionStorage.getItem('name')) {
+        // Retrieve data from sessionStorage
+        var userID = sessionStorage.getItem('userID');
+        var name = sessionStorage.getItem('name');
+        document.getElementById("profile").innerHTML = name
+
+        // Use the data as needed
+        // console.log(userID); // Output: The stored userID
+        // console.log(name);   // Output: The stored name
+        alert(userID);
+        alert(name);
+      } else {
+        // Redirect to the login page or handle the scenario when data is not set
+        console.log("User not logged in or data not set.");
+      }
+
+    function Logout() {
+
+      sessionStorage.setItem('userID', null);
+      sessionStorage.setItem('name', null);
+
+      window.location.href = "loginpage.html";
+    }
+  </script>
+
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>
